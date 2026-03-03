@@ -194,7 +194,9 @@ border-bottom: 1px solid #e7e9fc;
 /* advantages */
 
 
-
+.section-title {
+    margin-bottom: 8px;
+}
 
 .advantages-title {
     font-size: 20px;
@@ -206,6 +208,16 @@ border-bottom: 1px solid #e7e9fc;
 
 .advantages-item {
     display: flex;
+    gap: 24px;
+    margin-right: 24px;
+}
+
+.advantages-item:last-child {
+    margin-right: 0;
+}
+
+.advantages-item:not(:first-child) {
+    flex-basis: calc((100% - 3 * 24px)/4)
 }
 
 .advantages-text {
