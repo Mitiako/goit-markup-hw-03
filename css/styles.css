@@ -296,12 +296,6 @@ border-bottom: 1px solid #e7e9fc;
         color: #2e2f42;
 }
 
-.portfolio-item img {
-        border-radius: 10px;
-        margin: 0 auto;
-}
-
-
 .portfolio-item {
     display: flex;
     flex-wrap: wrap;
@@ -311,13 +305,16 @@ border-bottom: 1px solid #e7e9fc;
     text-align: center;
 }
 
+.portfolio-item img {
+        border-radius: 10px;
+        margin: 0 auto;
+}
 
 .portfolio-text {
         line-height: 1.5;
         letter-spacing: 0.02em;
         display: block;
         text-align: center;
-        
 }
 
 /* Footer */
