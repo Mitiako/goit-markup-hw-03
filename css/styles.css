@@ -329,7 +329,8 @@ border-bottom: 1px solid #e7e9fc;
 
 /* Footer */
 .site-footer {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #2e2f42;
 }
 
