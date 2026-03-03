@@ -28,11 +28,13 @@ img {
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
-    border: 0;
     padding: 0;
-    clip: rect(0 0 0 0);
+    margin: -1px;
     overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
 }
 
 .container {
@@ -193,17 +195,8 @@ border-bottom: 1px solid #e7e9fc;
 
 /* advantages */
 
-.visually-hidden {
-position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border: 0;
+.section {
+    padding: 120px 0;
 }
 
 .section-title {
@@ -211,6 +204,7 @@ position: absolute;
 }
 
 .advantages-title {
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -220,20 +214,7 @@ position: absolute;
 
 .advantages {
     display: flex;
-}
-
-.advantages-item {
-    display: flex;
     gap: 24px;
-    margin-right: 24px;
-}
-
-.advantages-item:last-child {
-    margin-right: 0;
-}
-
-.advantages-item:not(:first-child) {
-    flex-basis: calc((100% - 3 * 24px)/4)
 }
 
 .advantages-text {
